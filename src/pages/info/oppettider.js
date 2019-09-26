@@ -56,7 +56,7 @@ const OpeningHoursPage = () => {
   return (
     <Layout>
       <Sec style={{ textAlign: "center" }}>
-        <Wrap style={{ maxWidth: "500px" }}>
+        <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>
             Öppettider <span>Välkommen in</span>
           </h1>

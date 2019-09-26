@@ -9,7 +9,7 @@ const ContactPage = () => {
   return (
     <Layout>
       <Sec>
-        <Wrap style={{ maxWidth: "500px", textAlign: "center" }}>
+        <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>
             Boka & Beställ <span>Ring Mamma Teresa</span>
           </h1>
