@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../../components/layout"
 import { Sec, Wrap } from "../../components/styled"
 
-import AvecMenu from "../../components/menu/Avecmenu"
+import AvecMenu from "../../components/menu/avecmenu"
 
 const AvecPage = () => {
   return (
