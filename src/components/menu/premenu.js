@@ -65,7 +65,7 @@ const PreMenu = () => {
       <div>
         {data.allAirtable.edges.map(({ node }) => (
           <MenuItem>
-            <div className="name">{node.data.Namn}.</div>
+            <div className="name">{node.data.Namn}</div>
             <div className="body">{node.data.Body}</div>
             <div className="price">{node.data.Pris}:-</div>
           </MenuItem>
