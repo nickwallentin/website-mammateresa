@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Mamma Teresa Restaurang & Pizzeria`,
@@ -16,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: `keyDIkhb2cYc0iNnT`,
+        apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
             baseId: `appWcj3R3jMgsncJU`,
