@@ -44,7 +44,7 @@ const IndexMenuSection = () => {
       }
     }
   `)
-  console.log(data)
+
   return (
     <Sec>
       <Wrap>

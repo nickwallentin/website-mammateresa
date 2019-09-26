@@ -43,6 +43,7 @@ const IndexSocialSection = () => {
       allInstaNode(limit: 8) {
         edges {
           node {
+            id
             localFile {
               childImageSharp {
                 fluid(maxWidth: 400, maxHeight: 400, quality: 90) {
@@ -66,7 +67,7 @@ const IndexSocialSection = () => {
         <Grid cols="1fr 1fr 1fr 1fr" mcols="1fr 1fr">
           {data.allInstaNode.edges.map(({ node: insta }) => {
             return (
-              <div>
+              <div key={insta.id}>
                 <Img fluid={insta.localFile.childImageSharp.fluid} />
               </div>
             )

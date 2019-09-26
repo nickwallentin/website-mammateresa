@@ -50,7 +50,7 @@ const SubNav = () => {
     const today = moment()
       .day(moment().day())
       .format("dddd")
-    console.log(today)
+
     const getTodayData = data.allAirtable.edges.filter(item => {
       return item.node.data.Dag.toLowerCase() == today.toLowerCase()
     })

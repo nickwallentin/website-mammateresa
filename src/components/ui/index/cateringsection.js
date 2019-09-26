@@ -39,7 +39,7 @@ const IndexCateringSection = () => {
     <Sec>
       <Wrap>
         <SectionBreak>
-          <span class="break-line" />
+          <span className="break-line" />
           <h2>Catering</h2>
         </SectionBreak>
 

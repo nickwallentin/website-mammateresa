@@ -52,13 +52,6 @@ const OpeningHoursPage = () => {
     return item.node.data.Dag.toLowerCase() === today.toLowerCase()
   })
   const todaysData = getTodayData[0].node.data
-  const displayDayTime = () => {
-    return (
-      <>
-        {todaysData.Dag}, kl {todaysData._ppnar} - {todaysData.St_nger}
-      </>
-    )
-  }
 
   return (
     <Layout>
