@@ -24,7 +24,7 @@ const ContactPage = () => {
               0418-194 30
             </h2>
             <h4 style={{ fontFamily: "Georgia", fontWeight: "300" }}>
-              eller 0418 - 49 09 20
+              eller 0418-49 09 20
             </h4>
           </div>
         </Wrap>
