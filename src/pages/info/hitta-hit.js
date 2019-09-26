@@ -7,7 +7,7 @@ const FindUsPage = () => {
   return (
     <Layout>
       <Sec>
-        <Wrap style={{ maxWidth: "500px", textAlign: "center" }}>
+        <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>
             Hitta hit <span>Välkommen in</span>
           </h1>
