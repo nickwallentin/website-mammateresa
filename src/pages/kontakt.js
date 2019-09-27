@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { Sec, Wrap } from "../components/styled"
 
 import SocialSection from "../components/ui/index/socialsection"
@@ -8,6 +9,7 @@ import SocialSection from "../components/ui/index/socialsection"
 const ContactPage = () => {
   return (
     <Layout>
+      <SEO title={"Boka & beställ"} />
       <Sec>
         <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>

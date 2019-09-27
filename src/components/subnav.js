@@ -22,9 +22,15 @@ const SubNavContainer = styled.div`
     border-right: 2px solid black;
     padding: 10px;
     font-style: italic;
+    text-align: center;
+    line-height: 1.4em;
     &:last-of-type {
       border-right: 0px;
     }
+  }
+
+  & div a strong {
+    display: block;
   }
 `
 

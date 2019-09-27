@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { Sec, Wrap, Grid } from "../components/styled"
 
 import PreMenu from "../components/menu/premenu"
@@ -34,6 +35,7 @@ const MenuLinks = styled.div`
 const MenuPage = () => {
   return (
     <Layout>
+      <SEO lang="sv" title="Meny" />
       <Sec>
         <Wrap>
           <h1>Meny</h1>

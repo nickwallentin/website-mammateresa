@@ -1,11 +1,13 @@
 import React from "react"
 
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { Sec, Wrap, Button } from "../../components/styled"
 
 const FindUsPage = () => {
   return (
     <Layout>
+      <SEO lang="sv" title="Hitta hit" />
       <Sec>
         <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>

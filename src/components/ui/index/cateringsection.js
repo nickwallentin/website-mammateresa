@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import { Sec, Wrap, Grid, Col } from "../../styled"
@@ -59,6 +59,16 @@ const IndexCateringSection = () => {
               Mamma Teresa erbjuder även catering. Bjud dina gäster på italiensk
               mat av högsta kvalitet.
             </p>
+            <Link
+              to="/catering"
+              style={{
+                color: "white",
+                fontStyle: "italic",
+                textDecoration: "underline",
+              }}
+            >
+              Läs mer om catering
+            </Link>
           </Col>
         </Grid>
       </Wrap>

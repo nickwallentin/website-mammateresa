@@ -1,13 +1,21 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { Sec, Wrap } from "../components/styled"
+
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <SEO lang="sv" title="404: Sidan finns inte" />
+    <Sec>
+      <Wrap style={{ textAlign: "center" }}>
+        <h1>404: Denna sida finns inte.</h1>
+        <p>Denna sidan finns tyvärr inte.</p>
+        <Link to="/">Tillbaka till startsidan</Link>
+      </Wrap>
+    </Sec>
   </Layout>
 )
 

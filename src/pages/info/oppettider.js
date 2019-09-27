@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 
 import { Sec, Wrap } from "../../components/styled"
 
@@ -55,6 +56,7 @@ const OpeningHoursPage = () => {
 
   return (
     <Layout>
+      <SEO lang="sv" title="Öppettider" />
       <Sec style={{ textAlign: "center" }}>
         <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>
