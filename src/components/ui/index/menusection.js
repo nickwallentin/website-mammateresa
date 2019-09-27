@@ -66,6 +66,7 @@ const IndexMenuSection = () => {
           style={{ marginBottom: "50px" }}
           fluid={data.file.childImageSharp.fluid}
         />
+
         <Grid
           gap="80px"
           style={{ maxWidth: "1200px", margin: "0 auto" }}

@@ -10,7 +10,7 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO title={"Boka & beställ"} />
-      <Sec>
+      <Sec space="40px 0px 0px 0px">
         <Wrap style={{ width: "500px", maxWidth: "90%", textAlign: "center" }}>
           <h1>
             Boka & Beställ <span>Ring Mamma Teresa</span>

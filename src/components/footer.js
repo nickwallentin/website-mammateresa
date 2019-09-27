@@ -19,6 +19,13 @@ const FooterNav = styled.div`
           margin-right: 0px;
       }
   }
+  @media screen and (max-width: 980px) {
+    flex-direction: column;
+    align-items: center;
+    & a {
+      padding: 10px 0px;
+    }
+  }
 `
 
 const FooterCopy = styled.div`
