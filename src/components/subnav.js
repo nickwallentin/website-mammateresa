@@ -63,7 +63,8 @@ const SubNav = () => {
     const todaysData = getTodayData[0].node.data
     return (
       <>
-        {todaysData.Dag}, kl {todaysData._ppnar} - {todaysData.St_nger}
+        <span className="hide-mobile">{todaysData.Dag},</span> kl{" "}
+        {todaysData._ppnar} - {todaysData.St_nger}
       </>
     )
   }
@@ -79,14 +80,16 @@ const SubNav = () => {
           </div>
           <div>
             <Link to="/info/oppettider">
-              <strong style={{ marginRight: "5px" }}>Öppet: </strong>{" "}
+              <strong style={{ marginRight: "5px" }}>
+                Öppet<span className="hide-desktop"> idag</span>:{" "}
+              </strong>{" "}
               {displayDayTime()}
             </Link>
           </div>
           <div>
             <Link to="/info/hitta-hit">
               <strong style={{ marginRight: "5px" }}>Hitta hit: </strong>{" "}
-              Storgatan 27, Landskrona
+              Storgatan 27<span className="hide-mobile">, Landskrona</span>
             </Link>
           </div>
         </SubNavContainer>
