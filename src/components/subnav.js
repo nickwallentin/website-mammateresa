@@ -74,7 +74,10 @@ const SubNav = () => {
         <SubNavContainer>
           <div>
             <Link to="/kontakt">
-              <strong style={{ marginRight: "5px" }}>Boka & Beställ: </strong>{" "}
+              <strong style={{ marginRight: "5px" }}>
+                <span className="hide-mobile">Boka & Beställ:</span>
+                <span className="hide-desktop">Ring:</span>
+              </strong>
               0418-194 30
             </Link>
           </div>
