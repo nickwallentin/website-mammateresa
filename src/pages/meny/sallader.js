@@ -28,6 +28,19 @@ const SaladPage = () => {
           </Link>
           <h1>Våra sallader</h1>
           <SaladMenu />
+          <Link
+            style={{
+              display: "flex",
+              alignItems: "center",
+              margin: "10px 0px",
+            }}
+            to="/meny"
+          >
+            <BlackArrowRight
+              style={{ transform: "rotateZ(180deg)", marginRight: "15px" }}
+            />
+            Tillbaka till menyn
+          </Link>
         </Wrap>
       </Sec>
     </Layout>

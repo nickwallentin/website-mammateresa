@@ -28,6 +28,19 @@ const ChildrenPage = () => {
           </Link>
           <h1>Maträtter för barnen</h1>
           <ChildMenu />
+          <Link
+            style={{
+              display: "flex",
+              alignItems: "center",
+              margin: "10px 0px",
+            }}
+            to="/meny"
+          >
+            <BlackArrowRight
+              style={{ transform: "rotateZ(180deg)", marginRight: "15px" }}
+            />
+            Tillbaka till menyn
+          </Link>
         </Wrap>
       </Sec>
     </Layout>

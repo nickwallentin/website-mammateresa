@@ -28,6 +28,19 @@ const PrePage = () => {
           </Link>
           <h1>Våra förrätter</h1>
           <PreMenu />
+          <Link
+            style={{
+              display: "flex",
+              alignItems: "center",
+              margin: "10px 0px",
+            }}
+            to="/meny"
+          >
+            <BlackArrowRight
+              style={{ transform: "rotateZ(180deg)", marginRight: "15px" }}
+            />
+            Tillbaka till menyn
+          </Link>
         </Wrap>
       </Sec>
     </Layout>
