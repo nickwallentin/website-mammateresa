@@ -76,7 +76,7 @@ const CiderMenu = () => {
       </div>
       <div>
         {data.allAirtable.edges.map(({ node }) => (
-          <MenuItem>
+          <MenuItem key={node.id}>
             <div className="name">
               {node.data.Namn}{" "}
               <span className="special">{node.data.Alkoholhalt * 100}%</span>

@@ -10,22 +10,28 @@ import SocialSection from "../components/ui/index/socialsection"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
-    query AboutImageQuery {
-      file(name: { eq: "mt-temp-bild" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200, quality: 90) {
-            ...GatsbyImageSharpFluid
+    query AboutImagesQuery {
+      allFile(filter: { relativeDirectory: { eq: "about" } }) {
+        edges {
+          node {
+            id
+            childImageSharp {
+              fluid(maxWidth: 1200, quality: 90) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
   `)
+
   return (
     <Layout>
       <SEO lang="sv" title="Om mamma teresa"></SEO>
       <Sec>
         <Wrap>
-          <Img fluid={data.file.childImageSharp.fluid} />
+          <Img fluid={data.allFile.edges[3].node.childImageSharp.fluid} />
         </Wrap>
       </Sec>
       <Sec>
@@ -52,7 +58,7 @@ const AboutPage = () => {
         <Wrap>
           <Grid gap="0px" mgap="0px" cols="1fr 1fr">
             <div>
-              <Img fluid={data.file.childImageSharp.fluid} />
+              <Img fluid={data.allFile.edges[1].node.childImageSharp.fluid} />
             </div>
             <div
               style={{
@@ -89,7 +95,7 @@ const AboutPage = () => {
               på en riktig restaurangupplevelse.
             </div>
             <div>
-              <Img fluid={data.file.childImageSharp.fluid} />
+              <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
             </div>
           </Grid>
         </Wrap>

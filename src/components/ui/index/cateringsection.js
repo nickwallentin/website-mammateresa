@@ -26,7 +26,7 @@ const SectionBreak = styled.div`
 const IndexCateringSection = () => {
   const data = useStaticQuery(graphql`
     query GetCateringImage {
-      file(name: { eq: "mt-catering" }) {
+      file(name: { eq: "mt-catering-01" }) {
         childImageSharp {
           fluid(maxWidth: 600, quality: 90) {
             ...GatsbyImageSharpFluid

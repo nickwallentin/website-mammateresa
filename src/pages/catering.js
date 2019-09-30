@@ -10,11 +10,22 @@ import SocialSection from "../components/ui/index/socialsection"
 
 const CateringPage = () => {
   const data = useStaticQuery(graphql`
-    query CateringImageQuery {
-      file(name: { eq: "mt-catering" }) {
-        childImageSharp {
-          fluid(maxWidth: 1200, maxHeight: 500, quality: 90) {
-            ...GatsbyImageSharpFluid
+    query CateringImagesQuery {
+      allFile(filter: { relativeDirectory: { eq: "catering" } }) {
+        edges {
+          node {
+            id
+
+            childImageSharp {
+              fluid(
+                maxWidth: 1200
+                maxHeight: 500
+                quality: 90
+                cropFocus: CENTER
+              ) {
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
@@ -25,7 +36,7 @@ const CateringPage = () => {
       <SEO lang="sv" title="Catering" />
       <Sec>
         <Wrap>
-          <Img fluid={data.file.childImageSharp.fluid} />
+          <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
         </Wrap>
       </Sec>
 

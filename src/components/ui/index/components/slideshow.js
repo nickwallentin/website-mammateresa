@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
@@ -14,7 +15,7 @@ const SlideShowContainer = styled.div`
 `
 
 const SlideShow = () => {
-  const data = useStaticQuery(graphql`
+  const { allFile } = useStaticQuery(graphql`
     query SlideShowImages {
       allFile(filter: { relativeDirectory: { eq: "slides" } }) {
         edges {
@@ -29,10 +30,10 @@ const SlideShow = () => {
       }
     }
   `)
-
+  const rgn = Math.floor(Math.random() * (allFile.edges.length - 0)) + 0
   return (
     <SlideShowContainer>
-      <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
+      <Img fluid={allFile.edges[rgn].node.childImageSharp.fluid} />
     </SlideShowContainer>
   )
 }

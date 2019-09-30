@@ -69,7 +69,7 @@ const PizzaMenu = () => {
       </div>
       <div>
         {data.allAirtable.edges.map(({ node }) => (
-          <MenuItem>
+          <MenuItem key={node.id}>
             <div className="name">{node.data.Namn}.</div>
             <div className="body">{node.data.Body}</div>
             <div className="price">
