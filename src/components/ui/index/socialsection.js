@@ -40,7 +40,7 @@ const InstagramFollow = styled.a`
 const IndexSocialSection = () => {
   const data = useStaticQuery(graphql`
     query getInstagramPosts {
-      allInstaNode(limit: 8) {
+      allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 8) {
         edges {
           node {
             id

@@ -16,7 +16,7 @@ const AboutPage = () => {
           node {
             id
             childImageSharp {
-              fluid(maxWidth: 1200, quality: 90) {
+              fluid(maxWidth: 1200, quality: 90, cropFocus: CENTER) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -31,7 +31,7 @@ const AboutPage = () => {
       <SEO lang="sv" title="Om mamma teresa"></SEO>
       <Sec>
         <Wrap>
-          <Img fluid={data.allFile.edges[3].node.childImageSharp.fluid} />
+          <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
         </Wrap>
       </Sec>
       <Sec>
@@ -48,8 +48,9 @@ const AboutPage = () => {
               i kombination med äkta parmaskinka, salami, nyriven parmesanost
               och mozzarella blir vår mat som en resa till italien utan att
               lämna Landskrona. Mamma Teresa har fått ett flertal utmärkelser
-              bland dem är Årets Restaurang 2008 och första pris under
-              kulturnatten.
+              bland dem är{" "}
+              <strong style={{ color: "black" }}>Årets Restaurang 2008</strong>{" "}
+              och första pris under kulturnatten.
             </p>
           </Col>
         </Wrap>
@@ -95,7 +96,7 @@ const AboutPage = () => {
               på en riktig restaurangupplevelse.
             </div>
             <div>
-              <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
+              <Img fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
             </div>
           </Grid>
         </Wrap>

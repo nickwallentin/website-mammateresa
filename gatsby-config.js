@@ -37,6 +37,11 @@ module.exports = {
             tableName: `Drinkmeny`,
             tableView: `Överblick`,
           },
+          {
+            baseId: `appWcj3R3jMgsncJU`,
+            tableName: `Press`,
+            tableView: `Överblick`,
+          },
         ],
       },
     },

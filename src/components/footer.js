@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
+import Img from "gatsby-image"
 import styled from "styled-components"
 
 import { Wrap } from "../components/styled"
@@ -35,9 +36,24 @@ const FooterCopy = styled.div`
   align-items: center;
   font-style: italic;
   font-size: 14px;
+  @media screen and (max-width: 980px) {
+    flex-direction: column;
+  }
 `
 
 const Footer = () => {
+  const { file } = useStaticQuery(graphql`
+    query GetCertificateImage {
+      file(name: { eq: "mamma-teresa-certificate" }) {
+        childImageSharp {
+          fluid(maxWidth: 300, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  console.log(file)
   return (
     <footer>
       <SubNav />
@@ -47,9 +63,21 @@ const Footer = () => {
           <Link to="/catering">Catering</Link>
           <Link to="/om-mamma-teresa">Om Mamma Teresa</Link>
           <Link to="/kontakt">Kontakt</Link>
+          <Link to="/press">Press</Link>
         </FooterNav>
         <FooterCopy>
+          <a
+            href="https://www.tripadvisor.se/Restaurant_Review-g1207904-d3139486-Reviews-Mamma_Teresa-Landskrona_Landskrona_Municipality_Skane_County.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Img
+              style={{ width: "300px" }}
+              fluid={file.childImageSharp.fluid}
+            />
+          </a>
           <div>© {new Date().getFullYear()} Mamma Teresa</div>
+
           <div>Skapad med kärlek av Creandia.</div>
         </FooterCopy>
       </Wrap>
