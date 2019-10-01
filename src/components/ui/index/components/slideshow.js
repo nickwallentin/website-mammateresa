@@ -22,7 +22,7 @@ const SlideShow = () => {
           node {
             childImageSharp {
               fluid(maxWidth: 1200, quality: 80) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

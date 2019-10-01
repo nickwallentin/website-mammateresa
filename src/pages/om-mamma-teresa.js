@@ -20,7 +20,7 @@ const AboutPage = () => {
             id
             childImageSharp {
               fluid(maxWidth: 1200, quality: 90, cropFocus: CENTER) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }

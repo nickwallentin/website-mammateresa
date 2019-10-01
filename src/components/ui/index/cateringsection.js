@@ -29,7 +29,7 @@ const IndexCateringSection = () => {
       file(name: { eq: "mt-catering-01" }) {
         childImageSharp {
           fluid(maxWidth: 600, quality: 90) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

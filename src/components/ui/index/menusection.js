@@ -37,8 +37,8 @@ const IndexMenuSection = () => {
     query IndexMenuImage {
       file(name: { eq: "mt-pizza-ingredients" }) {
         childImageSharp {
-          fluid(maxWidth: 1800, quality: 80) {
-            ...GatsbyImageSharpFluid
+          fluid(maxWidth: 1200, quality: 80) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
