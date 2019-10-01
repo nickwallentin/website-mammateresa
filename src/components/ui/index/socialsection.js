@@ -23,7 +23,7 @@ const SectionBreak = styled.div`
   }
 `
 
-const InstagramFollow = styled.a`
+const SocialFollow = styled.a`
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -73,15 +73,22 @@ const IndexSocialSection = () => {
             )
           })}
         </Grid>
-        <div>
-          <InstagramFollow
+        <Grid cols="1fr 1fr">
+          <SocialFollow
             href="https://www.instagram.com/pizzeriamammateresa/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            Se mer på instagram
-          </InstagramFollow>
-        </div>
+            Se mer på Instagram
+          </SocialFollow>
+          <SocialFollow
+            href="https://www.facebook.com/Pizzeria-Restaurang-Mamma-Teresa-164965443547208"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Se mer på Facebook
+          </SocialFollow>
+        </Grid>
       </Wrap>
     </Sec>
   )
