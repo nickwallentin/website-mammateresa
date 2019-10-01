@@ -95,7 +95,7 @@ const AboutPage = () => {
               att ni nu kommer till den nya restaurangen och låter oss bjuda er
               på en riktig restaurangupplevelse.
             </div>
-            <div>
+            <div className="change-order-mobile">
               <Img fluid={data.allFile.edges[2].node.childImageSharp.fluid} />
             </div>
           </Grid>
