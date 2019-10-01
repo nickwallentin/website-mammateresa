@@ -11,7 +11,10 @@ import SocialSection from "../components/ui/index/socialsection"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query AboutImagesQuery {
-      allFile(filter: { relativeDirectory: { eq: "about" } }) {
+      allFile(
+        filter: { relativeDirectory: { eq: "about" } }
+        sort: { fields: name, order: ASC }
+      ) {
         edges {
           node {
             id
