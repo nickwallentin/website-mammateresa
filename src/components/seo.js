@@ -42,6 +42,10 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `image`,
+          content:
+            `https://www.mammateresa.se` + site.siteMetadata.defaultImage,
+        },
+        {
           property: `og:image`,
           content:
             `https://www.mammateresa.se` + site.siteMetadata.defaultImage,
