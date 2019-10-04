@@ -32,9 +32,10 @@ const WinePage = () => {
           <h1>Viner</h1>
 
           <SparklingWineMenu />
+          <RoseWineMenu />
           <RedWineMenu />
           <WhiteWineMenu />
-          <RoseWineMenu />
+
           <Link
             style={{
               display: "flex",

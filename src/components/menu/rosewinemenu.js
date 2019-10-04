@@ -44,10 +44,7 @@ const RoseWineMenu = () => {
   const data = useStaticQuery(graphql`
     query RoseWineQuery {
       allAirtable(
-        filter: {
-          table: { eq: "Drinkmeny" }
-          data: { Typ: { eq: "Röda viner" } }
-        }
+        filter: { table: { eq: "Drinkmeny" }, data: { Typ: { eq: "Rosevin" } } }
         sort: { fields: data___order, order: ASC }
       ) {
         edges {

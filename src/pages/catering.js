@@ -45,7 +45,8 @@ const CateringPage = () => {
           <h1>Catering</h1>
           <p style={{ width: "500px", maxWidth: "95%" }}>
             Bjud dina gäster på italiensk kvalitet. All vår mat finns för
-            avhämtning och vi erbjuder också buffelösningar och catering.
+            avhämtning och vi erbjuder också buffelösningar och catering. Vid
+            större sällskap skickar vi gärna faktura.
           </p>
           <Grid cols="1fr 1fr">
             <div

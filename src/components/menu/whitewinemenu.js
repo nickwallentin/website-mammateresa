@@ -46,7 +46,7 @@ const WhiteWineMenu = () => {
       allAirtable(
         filter: {
           table: { eq: "Drinkmeny" }
-          data: { Typ: { eq: "Röda viner" } }
+          data: { Typ: { eq: "Vita viner" } }
         }
         sort: { fields: data___order, order: ASC }
       ) {
@@ -68,7 +68,7 @@ const WhiteWineMenu = () => {
   return (
     <MenuItemsContainer>
       <div>
-        <h3>Vit vin</h3>
+        <h3>Vitt vin</h3>
         <span className="break-line" />
       </div>
       <div>
