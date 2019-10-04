@@ -6,6 +6,7 @@ module.exports = {
     title: `Mamma Teresa Restaurang & Pizzeria`,
     description: `Mamma Teresa är en italiensk oas i centrala Landskrona. Kvalitet är av största vikt för oss och vi vill leverera en äkta italiensk smakupplevelse.`,
     author: `@niklaswallentin`,
+    defaultImage: `/images/mt-social.jpg`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

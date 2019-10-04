@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            defaultImage
           }
         }
       }
@@ -38,6 +39,12 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `image`,
+          property: `og:image`,
+          content:
+            `https://www.mammateresa.se` + site.siteMetadata.defaultImage,
         },
         {
           property: `og:title`,
