@@ -10,7 +10,7 @@ import IndexSocialSection from "../components/ui/index/socialsection"
 
 const IndexPage = () => (
   <Layout>
-    <SEO lang="sv" title="Italiensk pizzeria och restaurang" />
+    <SEO lang="sv" title="Mamma Teresa Restaurang & Pizzeria" />
     <IndexTopSection />
     <IndexMenySection />
     <IndexCateringSection />
