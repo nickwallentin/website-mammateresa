@@ -15,7 +15,7 @@ const NavItems = styled.div`
   align-content: center;
   @media screen and (max-width: 980px) {
     & a svg {
-      max-width: 250px !important;
+      max-width: 150px !important;
     }
   }
 `
@@ -47,7 +47,7 @@ const Header = () => (
       <Wrap>
         <NavItems>
           <Link to="/">
-            <Logo style={{ maxWidth: "350px" }}></Logo>
+            <Logo style={{ maxWidth: "50px" }}></Logo>
           </Link>
           <LinksContainer>
             <Link to="/meny">Meny</Link>
