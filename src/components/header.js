@@ -13,6 +13,9 @@ const NavItems = styled.div`
   display: flex;
   justify-content: space-between;
   align-content: center;
+  & a svg {
+    max-width: 250px !important;
+  }
   @media screen and (max-width: 980px) {
     & a svg {
       max-width: 150px !important;
