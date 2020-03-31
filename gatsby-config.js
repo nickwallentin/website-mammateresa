@@ -52,17 +52,7 @@ module.exports = {
         username: `pizzeriamammateresa`,
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Playfair Display`,
-            variants: [`300`, `900`],
-          },
-        ],
-      },
-    },
+
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
