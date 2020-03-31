@@ -33,6 +33,14 @@ const LinksContainer = styled.div`
   }
 `
 
+const MenuCTA = styled.a`
+  padding: 5px 15px !important;
+  color: white !important;
+  background: #455137;
+  display: inline-block;
+  line-height: 1.5rem;
+`
+
 const Header = () => (
   <header>
     <nav style={{ padding: "20px 0px" }}>
@@ -43,13 +51,22 @@ const Header = () => (
           </Link>
           <LinksContainer>
             <Link to="/meny">Meny</Link>
-            <Link to="/catering">Catering</Link>
+            <Link className="hide-mobile" to="/catering">
+              Catering
+            </Link>
             <Link className="hide-mobile" to="/om-mamma-teresa">
               Om Mamma Teresa
             </Link>
             <Link className="hide-mobile" to="/kontakt">
               Kontakt
             </Link>
+            <MenuCTA
+              href="https://web.trueapp.se/mammateresa/store1/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Beställ online
+            </MenuCTA>
           </LinksContainer>
         </NavItems>
       </Wrap>
