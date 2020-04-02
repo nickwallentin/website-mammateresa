@@ -76,7 +76,9 @@ const Footer = () => {
               fluid={file.childImageSharp.fluid}
             />
           </a>
-          <div>© {new Date().getFullYear()} Mamma Teresa</div>
+          <div>
+            © {new Date().getFullYear()} Mamma Teresa. Org.nr: 556889-0577
+          </div>
 
           <div>Skapad med kärlek av Creandia.</div>
         </FooterCopy>
