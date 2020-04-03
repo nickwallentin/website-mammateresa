@@ -43,9 +43,23 @@ const MenuCTA = styled.a`
   display: inline-block;
   line-height: 1.5rem;
 `
+const GlobalMessage = styled(Link)`
+  padding: 10px;
+  background: #455137;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: 0px;
+  font-size: 1rem;
+  line-height: 1.2rem;
+`
 
 const Header = () => (
   <header>
+    <GlobalMessage to="/bestall-online">
+      Nyhet! Nu kan du beställa online. Klicka här för att läsa mer.
+    </GlobalMessage>
+
     <nav style={{ padding: "20px 0px" }}>
       <Wrap>
         <NavItems>
