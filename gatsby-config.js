@@ -47,13 +47,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `pizzeriamammateresa`,
-      },
-    },
-
-    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
