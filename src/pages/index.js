@@ -14,7 +14,7 @@ const IndexPage = () => (
     <IndexTopSection />
     <IndexMenySection />
     <IndexCateringSection />
-    <IndexSocialSection />
+    {/* <SocialSection></SocialSection> */}
   </Layout>
 )
 

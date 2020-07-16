@@ -105,7 +105,7 @@ const AboutPage = () => {
         </Wrap>
       </Sec>
 
-      <SocialSection />
+      {/* <SocialSection></SocialSection> */}
     </Layout>
   )
 }

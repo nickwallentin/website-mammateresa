@@ -31,7 +31,7 @@ const ContactPage = () => {
           </div>
         </Wrap>
       </Sec>
-      <SocialSection></SocialSection>
+      {/* <SocialSection></SocialSection> */}
     </Layout>
   )
 }

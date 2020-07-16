@@ -152,7 +152,7 @@ const CateringPage = () => {
           </Grid>
         </Wrap>
       </Sec>
-      <SocialSection />
+      {/* <SocialSection></SocialSection> */}
     </Layout>
   )
 }
