@@ -38,6 +38,11 @@ const SocialFollow = styled.a`
 `
 
 const IndexSocialSection = () => {
+  return <p>temp</p>
+}
+
+/*
+const IndexSocialSection = () => {
   const data = useStaticQuery(graphql`
     query getInstagramPosts {
       allInstaNode(sort: { fields: timestamp, order: DESC }, limit: 8) {
@@ -92,6 +97,7 @@ const IndexSocialSection = () => {
       </Wrap>
     </Sec>
   )
-}
+        }
+        */
 
 export default IndexSocialSection
