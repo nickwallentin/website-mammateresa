@@ -21,7 +21,6 @@ const BestallOnline = () => {
               Beställ online
             </a>
           </p>
-          <p>Ni som beställer via appen får 10 % rabatt.</p>
 
           <p>
             Som vanligt är pizzan klar efter 20 minuter! Ring 0418-19430 när ni
