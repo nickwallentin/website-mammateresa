@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
 import { Sec, Wrap } from "../../components/styled"
 
-import PizzaMenu from "../../components/menu/pizzamenu"
 import BlackArrowRight from "../../assets/black-arrow-right.svg"
+import Layout from "../../components/layout"
+import { Link } from "gatsby"
+import PizzaMenu from "../../components/menu/pizzamenu"
+import React from "react"
+import SEO from "../../components/seo"
 
 const PizzaPage = () => {
   return (
@@ -13,6 +13,16 @@ const PizzaPage = () => {
       <SEO lang="sv" title="Pizza" />
       <Sec>
         <Wrap>
+          <div
+            style={{
+              padding: "0.5rem",
+              textAlign: "center",
+              background: "#d8d8d8",
+              marginBottom: "0.5rem",
+            }}
+          >
+            Vi erbjuder även veganska pizzor med veganost!
+          </div>
           <Link
             style={{
               display: "flex",

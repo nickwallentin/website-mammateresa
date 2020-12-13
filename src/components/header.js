@@ -1,13 +1,11 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-
-import styled from "styled-components"
-
 import { Sec, Wrap } from "../components/styled"
 
+import { Link } from "gatsby"
 import Logo from "../assets/mamma-teresa-logo.svg"
+import PropTypes from "prop-types"
+import React from "react"
 import SubNav from "../components/subnav"
+import styled from "styled-components"
 
 const NavItems = styled.div`
   display: flex;
@@ -56,9 +54,7 @@ const GlobalMessage = styled(Link)`
 
 const Header = () => (
   <header>
-    <GlobalMessage to="/bestall-online">
-      Nyhet! Nu kan du beställa online. Klicka här för att läsa mer.
-    </GlobalMessage>
+    <GlobalMessage>Beställ online - Vi erbjuder även hemkörning</GlobalMessage>
 
     <nav style={{ padding: "20px 0px" }}>
       <Wrap>
