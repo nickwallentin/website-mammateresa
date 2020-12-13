@@ -54,7 +54,7 @@ const GlobalMessage = styled.div`
 
 const Header = () => (
   <header>
-    <GlobalMessage>Beställ online</GlobalMessage>
+    <GlobalMessage>Beställ online - hämta på restaurang</GlobalMessage>
 
     <nav style={{ padding: "20px 0px" }}>
       <Wrap>
