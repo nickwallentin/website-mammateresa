@@ -1,5 +1,6 @@
+import { graphql, useStaticQuery } from "gatsby"
+
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const MenuItem = styled.div`
@@ -65,6 +66,16 @@ const PizzaMenu = () => {
     <MenuItemsContainer>
       <div>
         <h3>Pizza</h3>
+        <div
+          style={{
+            padding: "0.5rem",
+            textAlign: "center",
+            background: "#d8d8d8",
+            marginBottom: "0.5rem",
+          }}
+        >
+          Vi erbjuder även veganska pizzor med veganost!
+        </div>
         <span className="break-line" />
       </div>
       <div>
