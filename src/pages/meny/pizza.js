@@ -13,16 +13,6 @@ const PizzaPage = () => {
       <SEO lang="sv" title="Pizza" />
       <Sec>
         <Wrap>
-          <div
-            style={{
-              padding: "0.5rem",
-              textAlign: "center",
-              background: "#d8d8d8",
-              marginBottom: "0.5rem",
-            }}
-          >
-            Vi erbjuder även veganska pizzor med veganost!
-          </div>
           <Link
             style={{
               display: "flex",
