@@ -41,7 +41,7 @@ const MenuCTA = styled.a`
   display: inline-block;
   line-height: 1.5rem;
 `
-const GlobalMessage = styled(Link)`
+const GlobalMessage = styled.div`
   padding: 10px;
   background: #455137;
   color: white;
