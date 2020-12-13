@@ -54,7 +54,7 @@ const GlobalMessage = styled.div`
 
 const Header = () => (
   <header>
-    <GlobalMessage>Beställ online - Vi erbjuder även hemkörning</GlobalMessage>
+    <GlobalMessage>Beställ online</GlobalMessage>
 
     <nav style={{ padding: "20px 0px" }}>
       <Wrap>
