@@ -1,6 +1,6 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
 
 const MenuItem = styled.div`
   display: grid;
@@ -20,7 +20,7 @@ const MenuItem = styled.div`
       font-size: 14px;
     }
   }
-`
+`;
 const MenuItemsContainer = styled.div`
   padding: 40px 0px;
   h3 {
@@ -38,7 +38,7 @@ const MenuItemsContainer = styled.div`
     position: absolute;
     top: 35%;
   }
-`
+`;
 
 const SaladMenu = () => {
   const data = useStaticQuery(graphql`
@@ -62,24 +62,24 @@ const SaladMenu = () => {
         }
       }
     }
-  `)
+  `);
   return (
     <MenuItemsContainer>
       <div>
-        <h3>Sallad med Rosettabröd</h3>
-        <span className="break-line" />
+        <h3>Sallad med pesto, örtsås och Rosettabröd</h3>
+        <span className='break-line' />
       </div>
       <div>
         {data.allAirtable.edges.map(({ node }) => (
           <MenuItem key={node.id}>
-            <div className="name">{node.data.Namn}.</div>
-            <div className="body">{node.data.Body}</div>
-            <div className="price">{node.data.Pris}:- </div>
+            <div className='name'>{node.data.Namn}.</div>
+            <div className='body'>{node.data.Body}</div>
+            <div className='price'>{node.data.Pris}:- </div>
           </MenuItem>
         ))}
       </div>
     </MenuItemsContainer>
-  )
-}
+  );
+};
 
-export default SaladMenu
+export default SaladMenu;
