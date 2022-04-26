@@ -1,10 +1,10 @@
-import React from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
-import Img from "gatsby-image"
-import styled from "styled-components"
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
-import { Wrap } from "../components/styled"
-import SubNav from "../components/subnav"
+import Img from 'gatsby-image';
+import React from 'react';
+import SubNav from '../components/subnav';
+import { Wrap } from '../components/styled';
+import styled from 'styled-components';
 
 const FooterNav = styled.div`
   border-bottom: 2px solid black;
@@ -27,7 +27,7 @@ const FooterNav = styled.div`
       padding: 10px 0px;
     }
   }
-`
+`;
 
 const FooterCopy = styled.div`
   padding: 15px 0px;
@@ -39,7 +39,7 @@ const FooterCopy = styled.div`
   @media screen and (max-width: 980px) {
     flex-direction: column;
   }
-`
+`;
 
 const Footer = () => {
   const { file } = useStaticQuery(graphql`
@@ -52,27 +52,28 @@ const Footer = () => {
         }
       }
     }
-  `)
-  console.log(file)
+  `);
+  console.log(file);
   return (
     <footer>
       <SubNav />
       <Wrap>
         <FooterNav>
-          <Link to="/meny">Meny</Link>
-          <Link to="/catering">Catering</Link>
-          <Link to="/om-mamma-teresa">Om Mamma Teresa</Link>
-          <Link to="/kontakt">Kontakt</Link>
-          <Link to="/press">Press</Link>
+          <Link to='/meny'>Meny</Link>
+          <Link to='/lunch'>Lunch</Link>
+          <Link to='/catering'>Catering</Link>
+          <Link to='/om-mamma-teresa'>Om Mamma Teresa</Link>
+          <Link to='/kontakt'>Kontakt</Link>
+          <Link to='/press'>Press</Link>
         </FooterNav>
         <FooterCopy>
           <a
-            href="https://www.tripadvisor.se/Restaurant_Review-g1207904-d3139486-Reviews-Mamma_Teresa-Landskrona_Landskrona_Municipality_Skane_County.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://www.tripadvisor.se/Restaurant_Review-g1207904-d3139486-Reviews-Mamma_Teresa-Landskrona_Landskrona_Municipality_Skane_County.html'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Img
-              style={{ width: "300px" }}
+              style={{ width: '300px' }}
               fluid={file.childImageSharp.fluid}
             />
           </a>
@@ -84,7 +85,7 @@ const Footer = () => {
         </FooterCopy>
       </Wrap>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
