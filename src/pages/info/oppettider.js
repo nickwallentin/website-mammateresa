@@ -82,7 +82,7 @@ const OpeningHoursPage = () => {
           </div>
         </Wrap>
       </Sec>
-      <SocialSection></SocialSection>
+
     </Layout>
   )
 }
