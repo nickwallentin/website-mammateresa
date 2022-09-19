@@ -58,7 +58,7 @@ const SubNav = () => {
       .format("dddd")
 
     const getTodayData = data.allAirtable.edges.filter(item => {
-      return item.node.data.Dag.toLowerCase() == today.toLowerCase()
+      return item?.node?.data?.Dag?.toLowerCase() == today.toLowerCase()
     })
     const todaysData = getTodayData[0].node.data
     return (
