@@ -67,7 +67,7 @@ const OpeningHoursPage = () => {
               return (
                 <DayTimeCell
                   className={
-                    today === item.data.Dag.toLowerCase() ? "today" : null
+                    today === item?.data?.Dag?.toLowerCase() ? "today" : null
                   }
                 >
                   <div className="day">
