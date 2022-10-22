@@ -1,11 +1,11 @@
-import { Col, Grid, Sec, Wrap } from '../components/styled';
-import { graphql, useStaticQuery } from 'gatsby';
+import { Col, Grid, Sec, Wrap } from "../components/styled";
+import { graphql, useStaticQuery } from "gatsby";
 
-import Img from 'gatsby-image';
-import Layout from '../components/layout';
-import React from 'react';
-import SEO from '../components/seo';
-import SocialSection from '../components/ui/index/socialsection';
+import Img from "gatsby-image";
+import Layout from "../components/layout";
+import React from "react";
+import SEO from "../components/seo";
+import SocialSection from "../components/ui/index/socialsection";
 
 const CateringPage = () => {
   const data = useStaticQuery(graphql`
@@ -42,7 +42,7 @@ const CateringPage = () => {
       <Sec space='0px 0px 40px 0px'>
         <Wrap>
           <h1>Catering</h1>
-          <p style={{ width: '500px', maxWidth: '95%' }}>
+          <p style={{ width: "500px", maxWidth: "95%" }}>
             Bjud dina gäster på italiensk kvalitet. All vår mat finns för
             avhämtning och vi erbjuder också buffelösningar och catering. Vid
             större sällskap skickar vi gärna faktura.
@@ -50,11 +50,11 @@ const CateringPage = () => {
           <Grid cols='1fr 1fr'>
             <div
               style={{
-                background: '#00000010',
-                padding: '40px',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
+                background: "#00000010",
+                padding: "40px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
               }}
             >
               <h3>Buffé 1</h3>
@@ -87,23 +87,23 @@ const CateringPage = () => {
                 <li>Nybakat bröd av durumvete och bruschetta.</li>
               </ul>
               <div>
-                För endast{' '}
+                För endast{" "}
                 <span
                   style={{
-                    display: 'block',
-                    fontSize: '34px',
-                    fontWeight: '900',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
+                    display: "block",
+                    fontSize: "34px",
+                    fontWeight: "900",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
                   }}
                 >
-                  179:-
-                </span>{' '}
+                  189:-
+                </span>{" "}
                 /person
               </div>
             </div>
-            <div style={{ background: '#00000010', padding: '40px' }}>
+            <div style={{ background: "#00000010", padding: "40px" }}>
               <h3>Buffé 2</h3>
               <ul>
                 <li>
@@ -135,16 +135,16 @@ const CateringPage = () => {
                 <li>Tiramisutårta (italiensk dessert)</li>
               </ul>
               <div>
-                För endast{' '}
+                För endast{" "}
                 <span
                   style={{
-                    display: 'block',
-                    fontSize: '34px',
-                    fontWeight: '900',
+                    display: "block",
+                    fontSize: "34px",
+                    fontWeight: "900",
                   }}
                 >
-                  199:-
-                </span>{' '}
+                  209:-
+                </span>{" "}
                 /person
               </div>
             </div>
